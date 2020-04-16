@@ -1,0 +1,38 @@
+[{
+ "request": {
+   "url": "/descargarPDF",
+   "query": {},
+   "post": null,
+   "method": "GET"
+ },
+ "response": {
+   "status": 200,
+   "headers": {
+     "Content-Type": "application/pdf",
+     "Content-Disposition": "filaname=ManualAngular.pdf"
+   },
+   "file": "C:/Users/54351/Desktop/Escuelita/ManualAngular.pdf"
+  }
+ },
+
+ {
+  "request": {
+    "url": "/autenticacion",
+    "method": "POST",
+    "post": "{\"usuario\":\"admin\",\"contrasena\":\"admin\"}"
+  },
+  "response": {
+    "status": 200,
+    "file": "empleados.json"
+   }
+},
+{
+  "request": {
+   "url": "/autenticacion",
+   "method": "POST"
+   },
+  "response": {
+     "status": 401
+  }
+ }
+]
